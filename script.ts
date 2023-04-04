@@ -1,28 +1,30 @@
+// Первая часть
+
 // 1. Предложите имя переменной для хранения данных
 // о максимальной скорости передачи данных (maximum
 // data transfer speed).
 
-let maximumDataTransferSpeed
+        // let maximumDataTransferSpeed
 
 // 2. Предложите имя переменной для хранения текущего
 // дня недели (day of week).
 
-let dayOfWeek
+        // let dayOfWeek
 
 // 3. Составьте инструкцию, вычисляющую значение
 // выражения 2 + (6 / (1 + 2))
 
-let result = 2 + (6 / (1 + 2))
-console.log(result)
+        // let result = 2 + (6 / (1 + 2))
+        // console.log(result)
 
 // 4. Составьте выражение, которое истинно при значениях
 // переменной «х» из диапазона 0–9 и ложно для других
 // значений (например, х=0 — истина, х=3 — истина,
 // х=9 — истина, х=–1 — ложь, х=10 — ложь).
 
-x = prompt('Задание 4. Введите х')
-let trueOrFalse = x <= 9 && x >= 1
-console.log(trueOrFalse)
+        // x = prompt('Задание 4. Введите х')
+        // let trueOrFalse = x <= 9 && x >= 1
+        // console.log(trueOrFalse)
 
 // 5. Составьте выражение, которое истинно при четных
 // значениях переменной «х» из диапазона 0–10 и ложно
@@ -30,9 +32,9 @@ console.log(trueOrFalse)
 // ложь, х=8 — истина, х=–1 — ложь, х=10 — истина,
 // х=12 — ложь).
 
-x = prompt('Задание 5. Введите х')
-let trueOrFalseFive = (10 >= x && 0 <= x) && (x % 2 == 0)
-console.log(trueOrFalseFive)
+        // let x = prompt('Задание 5. Введите х')
+        // let trueOrFalseFive = (10 >= x && 0 <= x) && (x % 2 == 0)
+        // console.log(trueOrFalseFive)
 
 // 6. Составьте инструкции, вычисляющие и определяющие
 // типы данных, следующих выражений: 1+true (сум-
@@ -40,6 +42,18 @@ console.log(trueOrFalseFive)
 // символьного и числового значений), '1'+false (сумма
 // символьного и логического значений).
 
-console.log(1 + true)
-console.log('1' + 2)
-console.log('1' + false)
+        // console.log(1 + true)
+        // console.log('1' + 2)
+        // console.log('1' + false)
+
+
+
+// Вторая часть
+
+let x = confirm('Любите котиков?')
+if(x == true) {
+    console.log('Люююбит))')
+}
+else {
+    console.log('Не любит, падла((')
+}
