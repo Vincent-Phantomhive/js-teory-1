@@ -196,12 +196,126 @@
 // величину годовой депозитной ставки (в процентах)
 // и выводит количество лет, по прошествии которых
 // вклад увеличится вдвое.
-var vklad = 100;
-var procent = +prompt('Введите процент годовой депозитной ставки в процентах');
-var k = 0;
-while (vklad < 200) {
-    x = (vklad / 100) * procent;
-    vklad = vklad + x;
-    k++;
-}
-console.log('сумма увеличится вдвое через ' + k + ' лет');
+// let vklad = 100
+// let procent = +prompt('Введите процент годовой депозитной ставки в процентах')
+// let k = 0
+// while(vklad < 200) {
+//         x = (vklad / 100) * procent
+//         vklad = vklad + x
+//         k++
+// }
+// console.log('сумма увеличится вдвое через ' + k + ' лет')
+// 5. Напишите скрипт, который выводит ровно 10 слу-
+// чайных чисел из диапазона 1–20, кроме тех, которые
+// делятся на 4.
+// let i = 0
+// while(i < 10) {
+//         let x = Math.round(Math.random()*19)+1
+//         if(x % 4 != 0) {
+//                 console.log(x)
+//                 i++
+//         }
+// }
+// 6. Из-за утечки из бака охлаждения ежедневно вытекает
+// 10% налитой воды. При объеме воды менее 10 литров
+// возникает аварийная ситуация. Составьте программу,
+// которая запрашивает у пользователя первоначальный
+// объем воды и рассчитывает, на сколько дней работы
+// этого хватит.
+// let x = prompt('Введите начальное количество воды(больше 10 литров):')
+// let i = 0
+// while(x > 10) {
+//         let utechka = x * 0.1
+//         x = x - utechka
+//         i++
+// }
+// console.log(i)
+// Функции с. 159
+// 1. Создайте функцию sayError(), которая будет выво-
+// дить (при помощи диалогового окна alert) сообщение
+// с текстом «Some error occurred!».
+// function sayError() {
+//         alert('Some error occurred!')
+// }
+// sayError()
+// 2. Создайте функцию showError(x), которая будет выво-
+// дить (при помощи диалогового окна alert) сообщение
+// с текстом «Error X occurred!», где Х — текст из аргу-
+// мента функции (например, вызов showError(‘Out of
+// memory’) должен вывести сообщение «Error Out of
+// memory occurred!»).
+// function showError(err) {
+//         alert(`Error ${err} occurred!`)
+// }
+// showError('Out of memory')
+// 3. Создайте функцию createHeaders(N), которая создаст
+// на странице N заголовков второго уровня (<h2>) с над-
+// писями Header1, Header2 … HeaderN.
+// function createHeaders(N) {
+//         for(i = 1; i <= N; i++) {
+//                 document.write("<h2> Header "+ i + "</h2>");
+//         }
+// }
+// createHeaders(18)
+// 4. Создайте функцию checkPassword(x), которая вернет
+// значение true, если в качестве аргумента в нее будет
+// передан допустимый пароль (одно из значений «Step»,
+// «Web» или «JavaScript»). Иначе функция должна вер-
+// нуть false.
+// function checkPassword(x) {
+//         if(x == 'Step' || x == 'Web' || x == 'JavaScript') {
+//                 return console.log(true)
+//         }
+//         else {
+//                 return console.log(false)
+//         }
+// }
+// checkPassword('Web')
+// 5. Создайте функцию определения знака числа sign(x),
+// которая вернет значение –1, если аргумент «х» — от-
+// рицательное число, 1 — если положительное, 0 — если
+// аргумент «х» равен нулю.
+// function sign(x) {
+//         if(x > 0) {
+//                 return console.log(1)
+//         }
+//         else {
+//                 if(x < 0) {
+//                         return console.log(-1)
+//                 }
+//                 else {
+//                         return console.log(0)
+//                 }
+//         }
+// }
+// sign(-9)
+// 6. Предложите имя (согласно правилам именования)
+// и создайте функцию, которая будет возвращать на-
+// звания дней недели по их номеру: 0-Sunday, 1-Monday,
+// 2-Tuesday, 3-Wednesday, 4-Thursday, 5-Friday, 6-Saturday.
+// function dayOfWeek(x) {
+//         switch(x) {
+//                 case 0:
+//                         console.log('Sunday')
+//                         break
+//                 case 1:
+//                         console.log('Monday')
+//                         break
+//                 case 2:
+//                         console.log('Tuesday')
+//                         break
+//                 case 3:
+//                         console.log('Wednesday')
+//                         break
+//                 case 4:
+//                         console.log('Thursday')
+//                         break
+//                 case 5:
+//                         console.log('Friday')
+//                         break
+//                 case 6:
+//                         console.log('Saturday')
+//                         break
+//         }
+// }
+// dayOfWeek(6)
